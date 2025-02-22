@@ -5,9 +5,21 @@ const navLinks = document.querySelector('.nav-links');
 menuIcon.onclick = () => {
     navLinks.classList.toggle('active');
 }
-document.getElementById('githubButton').addEventListener('click', function () {
-    window.open('https://github.com/ricardo27885', '_blank');
+
+
+document.getElementById('linkedinButton').addEventListener('click', function () {
+    window.open('https://www.linkedin.com/in/ricardo-rodriguez-42a7b921a', '_blank');
 });
+
+document.getElementById('githubButton1').addEventListener('click', function () {
+    window.open('https://github.com/Ricardo27885', '_blank');
+});
+
+document.getElementById('githubButton').addEventListener('click', function () {
+    window.open('https://github.com/Ricardo27885', '_blank');
+});
+
+
 
 document.querySelector('.submit').addEventListener('click', async function () {
     const fromEmail = document.getElementById('from-email').value;
