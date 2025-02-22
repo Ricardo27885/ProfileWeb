@@ -287,6 +287,7 @@ section{
     color: black;
 }
 
+
 .input-box{
     display: flex;
     flex-direction: column;
@@ -297,30 +298,65 @@ section{
     margin-top: 5rem;
 }
 
-.input-box input{
-    position: relative;
+.input-box input {
+    width: 100%;
+    max-width: 500px; /* Limita el ancho del input */
     border-radius: 3rem;
     border: 2px solid black;
-    padding: 2rem 8rem;
-    font-size: 3rem;
-
+    padding: 1rem 3rem; /* Reduce el padding para mejor visibilidad */
+    font-size: 1.5rem; /* Reduce el tamaño del texto */
+    text-align: left; /* Asegura que el texto no esté centrado */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Si el texto es muy largo, se verá con "..." */
 }
 
-.input-box input::placeholder{
-    font-size: 3rem;
+.input-box input::placeholder {
+    font-size: 1.5rem; /* Reduce el tamaño del placeholder */
 }
 
-.input{
+.textarea-box {
     position: relative;
+    width: 100%;
+    max-width: 500px;
 }
 
-.input i{
-    position: absolute;
-    font-size: 4rem;
-    top: 50%;
-    left: 1%;
-    transform: translate(50%,-50%);
+.textarea-box textarea {
+    width: 100%;
+    border-radius: 2rem;
+    border: 2px solid black;
+    padding: 2rem;
+    font-size: 2rem;
+    height: 150px;
+    resize: none;
+    outline: none;
 }
+
+.textarea-box textarea::placeholder {
+    font-size: 2rem;
+}
+
+.textarea-box i {
+    position: absolute;
+    font-size: 3rem;
+    top: 1rem;
+    left: 2rem;
+}
+
+.input {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.input i {
+    position: absolute;
+    font-size: 2rem; /* Reduce el tamaño del ícono */
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
 
 footer{
     bottom: 0;
@@ -366,7 +402,7 @@ footer ul li a{
     }
 
     .input-box input{
-        padding: 2rem 5rem;
+        /* padding: 2rem 5rem; */
         font-size: 2.5rem;
     }
 
@@ -397,17 +433,32 @@ footer ul li a{
         flex-direction: column;
     }
 
-    .input-box input{
+    .input-box input {
         padding: 1rem 2rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem; /* Ajuste de tamaño de texto */
     }
 
-    .input-box input::placeholder{
-        font-size: 1.5rem;
+    .input-box input::placeholder {
+        font-size: 1.4rem; /* Ajuste en el tamaño del placeholder */
     }
 
     .input-box i{
         display: none;
+    }
+
+    .textarea-box textarea {
+        padding: 1.5rem;
+        font-size: 1.4rem; /* Ajuste de tamaño de texto */
+        height: 120px;
+    }
+
+    .textarea-box textarea::placeholder {
+        font-size: 1.4rem; /* Ajuste en el tamaño del placeholder */
+    }
+
+    .submit {
+        font-size: 1.6rem; /* Ajuste del tamaño del botón */
+        padding: 1.2rem 3rem;
     }
 
     .grip{
@@ -462,14 +513,29 @@ footer ul li a{
         width: 80vw;
     }
 
-    .input-box input{
-        padding: 0.5rem 3rem;
-        width: 80%;
-        font-size: 1.5rem;
+    .input-box input {
+        padding: 1rem 2rem;
+        font-size: 1.4rem; /* Ajuste de tamaño de texto */
+        width: 90%; /* Ajuste de ancho */
     }
 
-    .input-box input::placeholder{
-        font-size: 1.5rem;
+    .input-box input::placeholder {
+        font-size: 1.4rem; /* Ajuste en el tamaño del placeholder */
+    }
+
+    .textarea-box textarea {
+        padding: 1rem;
+        font-size: 1.3rem; /* Ajuste de tamaño de texto */
+        height: 120px;
+    }
+
+    .textarea-box textarea::placeholder {
+        font-size: 1.3rem; /* Ajuste en el tamaño del placeholder */
+    }
+
+    .submit {
+        font-size: 1.5rem; /* Ajuste del tamaño del botón */
+        padding: 1.2rem 3rem;
     }
 
     footer ul{
