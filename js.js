@@ -9,7 +9,7 @@ menuIcon.onclick = () => {
         window.open('https://github.com/ricardo27885', '_blank');
     });
 
-    document.querySelector('.btn').addEventListener('click', async function() {
+    document.querySelector('.submit').addEventListener('click', async function() {
         const fromEmail = document.getElementById('from-email').value;
         const toEmail = "borgealejandro031@gmail.com"; 
         const subject = document.getElementById('to-Subject').value;
