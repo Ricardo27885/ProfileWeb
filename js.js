@@ -19,6 +19,21 @@ document.getElementById('githubButton').addEventListener('click', function () {
     window.open('https://github.com/Ricardo27885', '_blank');
 });
 
+document.getElementById('link-Api').addEventListener('click', function () {
+    window.open('https://github.com/Ricardo27885/Api-Ecomerce', '_blank');
+});
+
+document.getElementById('link-Orion').addEventListener('click', function () {
+    window.open('https://github.com/Ricardo27885/OrionWeb', '_blank');
+});
+
+document.getElementById('WebSite-Orion').addEventListener('click', function () {
+    window.open('https://orionangular.web.app/api/signIn', '_blank');
+});
+
+document.getElementById('link-Desktop').addEventListener('click', function () {
+    window.open('https://github.com/Ricardo27885/Desktop', '_blank');
+});
 
 
 document.querySelector('.submit').addEventListener('click', async function () {
