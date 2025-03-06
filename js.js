@@ -61,13 +61,12 @@ document.querySelector('.submit').addEventListener('click', async function () {
         });
 
         const result = await response.json();
-        console.log(result);  // Ver la respuesta de la API
         if (response.ok) {
             alert(result.message);  // Muestra mensaje de éxito
         } else {
             alert(result.message);  // Muestra mensaje de error
         }
     } catch (error) {
-        console.error('Error en la solicitud:', error);
+        console.error('No, se pueden enviar más mensajes por hoy.');
     }
 });
